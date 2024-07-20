@@ -20,9 +20,6 @@
         "php": ">=7.4.33",
 		"cakephp/cakephp": "2.10.24"
     },
-    "require-dev": {
-        "cakephp/cakephp-codesniffer": "^1.0.0"
-    },
     "extra": {
         "installer-name": "CakeReplication"
     }

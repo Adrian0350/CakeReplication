@@ -1,5 +1,15 @@
 <?php
 
+/*
+ * App::build() includes Cake's core database classes path.
+ * · https://book.cakephp.org/2/en/core-utility-libraries/app.html#App::build
+ * · https://book.cakephp.org/2/en/core-utility-libraries/app.html#App::core
+ *
+ * This path is needed so as to extend the default MySQL Database class.
+ * Mysql class is needed for MySQLReplica class which adds the functionality 
+ * of switching between Source database and Replica database.
+ */
+App::build(['Model/Datasource/Database' => App::core('Datasource/Database')]);
 App::uses('Mysql', 'Model/Datasource/Database');
 
 /**
@@ -10,7 +20,7 @@ App::uses('Mysql', 'Model/Datasource/Database');
  * All Write queries go to Source database and all Read queries go to
  * a Replica database, which in turn was randomly assigned in database configuration (see database.php).
  */
-class MysqlReplica extends Mysql
+class MysqlReplication extends Mysql
 {
 	/**
 	 * Datasource description

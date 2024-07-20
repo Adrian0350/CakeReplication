@@ -34,7 +34,7 @@ class DATABASE_CONFIG
 	 *
 	 * @var string
 	 */
-	protected $replica_datasource = 'Database/MysqlReplica';
+	protected $replica_datasource = 'CakeReplication.Database/MysqlReplication';
 
 	/**
 	 * Datasource in use.
