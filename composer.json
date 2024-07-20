@@ -1,0 +1,29 @@
+{
+    "name": "adrian0350/cakephp-replication",
+    "description": "CakePHP 2.10.24 - MySQL Replication for MySQL 5.7",
+    "type": "cakephp-plugin",
+    "keywords": ["cakephp", "mysql", "replication", "master-slave"],
+    "homepage": "https://github.com/Adrian0350/CakeReplication",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jaime Zúñiga",
+            "homepage": "http://jaimez.bond",
+            "role": "Author"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/Adrian0350/CakeReplication/issues",
+        "source": "https://github.com/Adrian0350/CakeReplication"
+    },
+    "require": {
+        "php": ">=7.4.33",
+		"cakephp/cakephp": "2.10.24"
+    },
+    "require-dev": {
+        "cakephp/cakephp-codesniffer": "^1.0.0"
+    },
+    "extra": {
+        "installer-name": "CakeReplication"
+    }
+}
